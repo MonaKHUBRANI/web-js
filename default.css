@@ -1,0 +1,226 @@
+﻿
+html,body {/*تنسيق جسم الصفحه*/
+font-family:'Roboto' , sans-serif;
+line-height:1.5;
+}
+ *{ /*تنسيق الصفحه */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*يجعل الصفحه متوازنه الحجم*/
+}
+ 
+.container {/*تنسيق للكلاس*/
+max-width:88%;
+margin:auto;
+}
+.bg-dark {/*تنسيق للكلاس*/
+background-color: #252A34;
+color:#FFF;
+}
+.bg-light { /*الاطار الخارجي ل الديف3*/
+background-color:#08d9d6;/*******/
+color:#252A34;
+}
+.bg-primary {
+    background:#08d906;
+    color:#fff;
+}
+
+.text-primary {/*تنسيق للكلاس*/
+    color: #FF2E63;
+}
+.text-center {
+    text-align:center;
+}
+.l-heading {
+font-size:3rem;/*حجم*/
+text-transform:uppercase;
+}
+.lead { /*نص ج3*/
+font-size:1.3rem;
+
+}
+.by-1 {
+padding:1rem 0;
+}
+.p-1 { 
+    padding:1.5rem;
+
+}
+.btn {
+background:#08d9d6;/*لون المربع*/
+color:#fff;/*لون النص*/
+padding:0.5rem  1.5rem;/*حجم المربع*/
+}
+.btn-dark { 
+    background-color:#252A34;
+    color:#FFF;
+}
+    .btn:hover {
+    background:#ff2a36;/*عند التاشير عليه*/
+    }
+.box.shadow { /*شادو للصوره*/
+    box-shadow:0 0  2px #252A34;
+}
+#navbar{/*تنسيق nav المسمى ب*/
+ 
+    display: flex ;/*يحط النص باليمين من الصوره*/
+    justify-content:space-between;/*المسافه بينهم*/
+    align-items:center;/*يخلي الصوره والنص في نفس السطر*/
+  padding:0.75px;/*مسافه بين كل الاتجاهات 16 بيكسل*/
+  position:sticky;/*ثابته اعلى الشاشه لو تحركت*/
+  top:0;/*مسافه الاعلى*/
+z-index:1;/*تبقى ب الاعلى الاول*/
+}
+#navbar .logo img {/*تنسيق صوره*/
+ width: 88px;/*صغرت اللوقو*/
+}
+    #navbar ul {/*النص ul*/
+    list-style:none;/*ابعد النقط الي في جنب الكلمات*/
+    display: flex ;/*العناصر بالطول*/
+    }
+        #navbar ul li a {/*مسافه و لون الكلمات*/
+        color:#fff;
+        padding:1rem;/*مسافه بين الكلمات*/
+         }
+            #navbar ul li a:hover { /* لون النص عند التاشير*/
+                background-color: #880906;
+            }
+        /*ال شريط2 */
+        #showcase  
+             {
+        background:#252a34  url(../images/km.jpg) no-repeat center center/cover;
+        height:100vh;
+        color:#FFF;
+                  }
+#showcase .showcase-content{
+    display:flex;/*عرض لفتراضي بس يخبص*/
+    flex-direction:column;/*عمودي النص  و الزر*/
+align-items:center;
+justify-content:center;/*وسط النص و الزر*/
+height:90%;/*من الاعلى 90*/
+padding:1rem;
+background-color:rgba(0,0,0,0.8);/*وضوح الصوره*/
+
+}
+#about .about-contant {  
+    display:flex;
+    align-items:center;/*النص و الصوره الثالثه مسنتره جنب بعض*/
+    justify-content:center;/*وسط النص و الزر*/
+    /*padding-bottom:1.5rem;*//*py-1التابعد من ما جنبه ب امسحه عشان اضيف اختصار لكل المربعات*/
+}
+/*كود للصوره و النص ب شريط3*/
+#about .about-contant div,  
+#about .about-contant img{  
+   flex:1:
+}
+/*كود للصوره ب شريط3*/
+
+#about .about-contant img{  
+   width:50%;/*حجو صوره*/
+   margin-left:1.5rem;/*مسافه بين الصوره و النص*/
+   border:5px solid #fff;
+
+}
+#cat { 
+    background: url(../images/ca.png) no-repeat center center/cover;/*صوره - ملائمه الصوره*/
+    color:#FFF;
+}
+    #cat .cat-contant { 
+min-height:350px;
+display:flex
+flex-direction:column;
+align-items:center;
+justify-content:center;
+background-color:#rgba(0,0,0,0.6);
+overflow:hidden;
+    }
+
+#cat .cat-contant .container p  { 
+    margin-bottom:1.5rem;/*عشان الدنيا ماتتحاس*/
+}
+
+#programs{ 
+    color:#252A34;
+}
+    #programs .boxes { 
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    #programs .boxes .box { 
+       flex:1;
+       padding:1rem;
+        }
+        #programs .boxes .box .img { 
+            width:70px;
+            background-color:#08d9d6;
+            padding:0.5rem;
+            border-radius:100%;
+        }
+#trainers .trainers-boxes {
+     display: flex;
+}
+#trainers .trainers-boxes .trainer-box { 
+    background-color:#FFF;
+  flex:1;
+  border-radius:5px;
+  margin:1rem;
+
+}
+    #trainers .trainers-boxes .trainer-box img { 
+        display:block;
+        width:100%;
+        margin-bottom:10px;
+    }
+       #trainers .trainers-boxes .trainer-box ul { 
+     display: flex;
+list-style:none;
+       }
+       
+   #trainers .trainers-boxes .trainer-box ul li a { 
+color:#252a34;
+margin-right:10px;
+   }
+   #trainers .trainers-boxes .trainer-box ul li a:hover { 
+color:#ff2e63;
+    }
+#contact {
+    display:flex;
+}
+#contact  .contact-us ,
+#contact  .map
+{
+     flex:1;
+}
+    #contact .contact-us input,
+    #contact .contact-us textarea {
+        width:100%;
+        padding:0.75;
+        border:none;
+        margin-bottom:1rem;
+    }
+#contact .contact-us .form-group { 
+display:flex;
+}
+    #contact .contact-us .form-group  input[type="text"]
+    { 
+margin-right:0.75;
+    }
+
+
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+            @media screen and (-ms-view-state: fullscreen-portrait) {
+ 
+
+            }
+    
+ 
